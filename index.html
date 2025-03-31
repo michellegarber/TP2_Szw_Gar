@@ -7,15 +7,19 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <script src="script.js"></script>
-    <form>
-        <div class="mb-3">
-            <label for="tarea" class="form-label">Ingrese tarea</label>
-            <input type="text" class="form-control" id="tarea" placeholder="tarea a hacer">
-        </div>
-        <button type="submit" class="btn btn-primary mb-3">Enviar</button>
+    
 
-
+    <form id="formularioTareas">
+        <input type="text" class="form-control" id="tarea" placeholder="Tarea a hacer">
+    
+        <button type="submit" id="agregar" class="btn btn-primary mb-3">Agregar</button>
     </form>
+
+    <h2>Tareas:</h2>
+    <ul class="tareaElemento">
+
+    </ul>
+
+    <script src="script.js"></script> 
 </body>
 </html>
