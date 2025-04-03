@@ -5,21 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>to do list</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
+    <div class="form-container">
+        <form id="listaTareas">
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Ingresa Tarea:</label>
+                    <input id="tareaIngresada" type="text" class="form-control">
+                </div>
+                <button type="submit" class="botoncito" id="agregarLista">Enviar</button>
+
+                
+                <input type="radio" name="filter" value="Todas" checked>
+                <label>Todas</label>
+                <input type="radio" name="filter" value="Completadas">
+                <label>Completadas</label>
+                <input type="radio" name="filter" value="Pendientes">
+                <label>Pendientes</label>
+
+                <ul id="lista">
+                </ul>
+
+                <button class="boton" type="button" id="verMasRapida">Ver tarea más rápida</button>
+                <p id="tareaMasRapida"></p>
+            </form>
+    </div>
     
 
-    <form id="formularioTareas">
-        <input type="text" class="form-control" id="tarea" placeholder="Tarea a hacer">
+    <script src="script.js"></script>
     
-        <button type="submit" id="agregar" class="btn btn-primary mb-3">Agregar</button>
-    </form>
-
-    <h2>Tareas:</h2>
-    <ul class="tareaElemento">
-
-    </ul>
-
-    <script src="script.js"></script> 
 </body>
 </html>
